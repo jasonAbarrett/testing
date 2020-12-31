@@ -9,9 +9,9 @@ var fetchedData = "";
 
 btn.addEventListener("click", function() {
     var ourRequest = new XMLHttpRequest();
-    ourRequest.open('GET', 'https://learnwebcode.github.io/json-example/animals-1.json');
+    //ourRequest.open('GET', 'https://learnwebcode.github.io/json-example/animals-1.json');
     
-   // ourRequest.open('GET', 'https://api.thecatapi.com/v1/breeds');
+   ourRequest.open('GET', 'https://api.thecatapi.com/v1/breeds');
     
     ourRequest.onload = function() {
         if (ourRequest.status >= 200 && ourRequest.status < 400) {
@@ -106,15 +106,15 @@ function showValue(index) {
  if (index == "Select a cat breed") {
     //alert("not");
 
-    document.getElementById("cat-info").innerHTML = htmlString;
+    document.getElementById("app").innerHTML = htmlString;
 
   } else {
 
   var htmlString = "";
   
-  htmlString = "<p>" + fetchedData[index].species + "</p>";
+  htmlString = "<img src='" + fetchedData[index].image.url + "' alt='cat image'>";
 
-document.getElementById("cat-info").innerHTML = htmlString;
+document.getElementById("app").innerHTML = htmlString;
  }; 
 
 
