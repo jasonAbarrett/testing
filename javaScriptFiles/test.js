@@ -98,5 +98,26 @@ btn.addEventListener("click", function() {
 
 
 function showValue(index) {
-  console.log('This is the species:  ' +fetchedData[index].species);
+  
+  console.log(index);
+  //console.log('This is the species:  ' +fetchedData[index].species);
+  var htmlString = "";
+
+ if (index == "Select a cat breed") {
+    //alert("not");
+
+    document.getElementById("cat-info").innerHTML = htmlString;
+
+  } else {
+
+  var htmlString = "";
+  
+  htmlString = "<p>" + fetchedData[index].species + "</p>";
+
+document.getElementById("cat-info").innerHTML = htmlString;
+ }; 
+
+
+      
+
 };
