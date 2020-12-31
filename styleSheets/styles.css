@@ -1,0 +1,497 @@
+/* External Style Sheet  
+
+
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li, 
+form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: Oswald, Tahoma, Geneva, sans-serif;
+    vertical-align: baseline;
+}
+
+
+/***********************************
+    General Styles
+**********************************/
+
+body { 
+    background-color: #FBFAF8;
+}
+
+header, footer { 
+    background-color: #698F3F;
+}
+
+h2, h3, h4 {
+    font-family: 'Amatic SC', cursive;
+    color: #9b1d20;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    color:#0a122a;  
+    font-family: 'Amatic SC', cursive;
+}   
+
+h2 {
+    padding-top: .5em;
+    font-size: 2.5em;
+    margin: .25em 0;    
+    text-align: center;
+}
+
+.newArtisth2 { 
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    margin-top: -10px;
+}
+
+
+h3 {
+    padding-top: .5em;
+    font-size: 1.75em;
+    text-align: left;
+}
+
+h4 {
+    padding-top: .5em;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+p, strong {
+    line-height: 1.7;
+    margin: .7em 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+    color: #0a122a;
+}
+
+
+.friendsli { 
+    line-height: 1.7;
+    margin: .7em 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+    color: #0a122a;
+
+}
+
+
+
+ul { 
+    padding-left: 15px;  
+  
+}
+
+
+
+article {
+    width: 50%;
+    margin: 0 auto;
+    color: #0a122a;
+}
+
+
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 3px solid #698F3F;
+    
+  }
+
+
+#footer { 
+    line-height: 1;
+    height: 2 em;
+    padding: 1em;
+    text-align: center;
+    padding-top: 2em;
+   
+}
+
+footer address p { 
+    text-align: right;
+    font-size: .75em;
+}   
+
+
+#goback {
+    background-color: #698F3F;
+    border: 1px solid #0a122a;
+    color: #0a122a;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 2px 2px;
+
+    display: block;
+    /* padding-bottom: .3em; */
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+    color: #0a122a;
+
+}
+
+#btn {
+    background-color: #698F3F;
+    border: 1px solid #0a122a;
+    color: #0a122a;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 2px 2px;
+
+    display: inline-block;
+    /* padding-bottom: .3em; */
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+    color: #0a122a;
+
+}
+
+
+
+#inline {
+    padding-top: .5em;
+    font-size: 1.75em;
+    text-align: left;
+    display: inline-block;
+    padding-right: 20px;
+
+}
+
+
+
+table {
+    border-collapse: collapse;
+  }
+  
+  table, td, th {
+    border: 1px solid black;
+  }
+
+
+td {
+    line-height: 1.7;
+    margin: .7em 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+    color: #0a122a;
+}
+
+th {
+    line-height: 1.7;
+    text-align: left;
+    margin: .7em 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+    color: #0a122a;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+
+
+.hide-me {
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(.75);
+  }
+
+
+
+  button {
+    background-color: #046380;
+    color: #FFF;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 2px 2px 0 #034154;
+    margin-bottom: 10px;
+    margin-left: 18px;
+    transition: opacity .4s ease-out, transform .4s ease-out, visibility .4s ease-out;
+    position: relative;
+    top: -10px;
+  }
+  
+  button:hover {
+    background-color: #034F66;
+  }
+  
+  button:active {
+    background-color: #034154;
+    box-shadow: none;
+    position: relative;
+    top: -8px;
+    left: 2px;
+  }
+  
+
+
+
+/*---------------------------
+   FORMS
+---------------------------*/
+
+
+fieldset { 
+    border: 3px solid #0a122a;
+    color: #9b1d20;
+    padding: 20px;
+    background-color: #FBFAF8;
+}   
+
+form {
+    width: 50%
+    margin: 0 auto;
+    border: 3px solid #698F3F; 
+    padding: 2em;
+    border-radius: 10px;
+    background-color: white;
+
+}
+
+
+.requiredField {
+    color: #9b1d20;
+    display: inline-block;
+    padding-left: .2em;
+}
+
+label {
+
+    display: block;
+    padding-bottom: .3em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+    color: #0a122a;
+}
+
+
+input, textarea, select {
+    margin-bottom: .4em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+    color: #0a122a;
+}
+    
+
+
+    
+
+#FNerror, #LNerror, #Emailerror {
+    margin: .2em 0 1em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+    color: #fc1612;
+}
+
+
+label.inline { /* for radio button & checkbox labels */
+    display: inline-block;
+}
+
+label.ckbxLbl {
+    width: 60px;
+}
+
+
+
+#noblock { 
+    color: #9b1d20;
+
+}
+
+
+#InputComment1 {
+    width: 97%;
+    margin: 0 auto;
+}
+
+
+
+#submit-button, #clear-form { 
+    background-color: #698F3F;
+    border: 1px solid #0a122a;
+    color: #0a122a;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+   
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+
+}
+
+#formArticle {
+    width: 35%;
+    margin: 0 auto;
+}
+
+#required { 
+    font-size: 12px;
+}
+
+
+
+
+
+/*---------------------------
+    Main Navigation
+---------------------------*/
+
+nav a:link, body a:link  {
+    color: #0a122a;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+}
+
+nav a:hover, body a:hover {
+    color: #9b1d20;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    
+}
+
+nav ul li{
+    position: relative;
+    transition-duration: 0.5s;
+    /*padding: 1em;*/
+}
+
+nav ul li:hover,
+nav ul li a:focus {
+    background-color: #9b1d20;
+}
+
+nav ul li a {
+    text-decoration: none;
+   /* color: #698F3F; */
+    display:block;
+    padding: 1em;
+}
+nav ul li a:hover {
+    color: #fff;
+}
+
+
+
+/*---------------------------
+   Skip Link
+---------------------------*/
+.skipLink {
+    padding: .5em;
+    position: absolute;
+    left: -1000px;
+    font-size: 1em;
+}
+.skipLink:active, 
+.skipLink:focus, 
+.skipLink:hover {
+    left: 0; 
+}
+
+
+
+
+/*---------------------------
+   Dog app - dogs.html page
+---------------------------*/
+
+#dog {
+    margin: 0;
+    font-family: sans-serif;
+} 
+
+
+.app {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  
+.header1 {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .header1 h1 {
+    margin: 0 0 10px 0;
+  }
+  
+  .header1 select {
+    font-size: 1rem;
+  }
+  
+  .slideshow {
+    flex: 1;
+    background-color: #333;
+    position: relative;
+    overflow: hidden;
+  }
+
+
+  .slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    opacity: 0;
+    transform: scale(1);
+    transition: all .9s ease-out;
+  } 
+
+
+
+  .slide:nth-last-child(2) {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+
+
+  
+
+
+
+
