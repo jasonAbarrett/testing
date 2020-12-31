@@ -1,7 +1,7 @@
 var animalContainer = document.getElementById("animal-info");
 var pageCounter = 1; 
 var btn = document.getElementById("btn");
-
+var fetchedData = "";
 
 
 
@@ -16,6 +16,7 @@ btn.addEventListener("click", function() {
     ourRequest.onload = function() {
         if (ourRequest.status >= 200 && ourRequest.status < 400) {
           var ourData = JSON.parse(ourRequest.responseText);
+          fetchedData = ourData;
           renderHTML(ourData);
         } else {
           console.log("We connected to the server, but it returned an error.");
@@ -24,9 +25,7 @@ btn.addEventListener("click", function() {
 
         //console.log(ourRequest.responseText);
         //    console.log(ourData[0]);
-           // console.log(ourData);
-        
-    
+           console.log(ourData);
     }; 
     
     // in real world, would do something more than log out to our console...
@@ -44,73 +43,60 @@ btn.addEventListener("click", function() {
 
 
 
- 
-
  function renderHTML(data) {
 
-//console.log(data);
-    
-var htmlString = "<select onchange='showValue(this)'><option>Select a cat breed</option>";
+    //console.log(data);
+        
+    var htmlString = "<select onchange='showValue(this.value)'><option>Select a cat breed</option>";
 
-
-
-for (i = 0; i < data.length; i++) {
-    
-    htmlString += "<option>" + data[i].name + "</option>";
-    //console.log(htmlString);
-    document.getElementById("option-box").innerHTML = htmlString;
-  }
-    
-  document.getElementById("option-box").innerHTML = htmlString += '</select>';
-  
-    //console.log(htmlString);
-
-
-    //showValue(data);
-     
-// 
-
-  //     var htmlString = "";
-  
-//     for (i = 0; i < data.length; i++) {
-//       htmlString += "<p>" + data[i].name + " is a " + data[i].species + " that likes to eat ";
+    for (i = 0; i < data.length; i++) {
+        
+        htmlString += "<option value=\"" + i + "\">" + data[i].name + "</option>";
+        //console.log(htmlString);
+        document.getElementById("option-box").innerHTML = htmlString;
+      }
+        
+      document.getElementById("option-box").innerHTML = htmlString += '</select>';
       
-//       for (ii = 0; ii < data[i].foods.likes.length; ii++) {
-//         if (ii == 0) {
-//           htmlString += data[i].foods.likes[ii];
-//         } else {
-//           htmlString += " and " + data[i].foods.likes[ii];
-//         }
-//       }
-  
-//       htmlString += ' and dislikes ';
-  
-//       for (ii = 0; ii < data[i].foods.dislikes.length; ii++) {
-//         if (ii == 0) {
-//           htmlString += data[i].foods.dislikes[ii];
-//         } else {
-//           htmlString += " and " + data[i].foods.dislikes[ii];
-//         }
-//       }
-  
-//       htmlString += '.</p>';
-  
-//       }
+        //console.log(htmlString);
 
 
-//     animalContainer.insertAdjacentHTML('beforeend', htmlString);
+        //showValue(data);
+        
+    // 
 
+      //     var htmlString = "";
+      
+    //     for (i = 0; i < data.length; i++) {
+    //       htmlString += "<p>" + data[i].name + " is a " + data[i].species + " that likes to eat ";
+          
+    //       for (ii = 0; ii < data[i].foods.likes.length; ii++) {
+    //         if (ii == 0) {
+    //           htmlString += data[i].foods.likes[ii];
+    //         } else {
+    //           htmlString += " and " + data[i].foods.likes[ii];
+    //         }
+    //       }
+      
+    //       htmlString += ' and dislikes ';
+      
+    //       for (ii = 0; ii < data[i].foods.dislikes.length; ii++) {
+    //         if (ii == 0) {
+    //           htmlString += data[i].foods.dislikes[ii];
+    //         } else {
+    //           htmlString += " and " + data[i].foods.dislikes[ii];
+    //         }
+    //       }
+      
+    //       htmlString += '.</p>';
+      
+    //       }
+
+
+    //     animalContainer.insertAdjacentHTML('beforeend', htmlString);
  }
 
 
-function showValue(breed) {
-  console.log(breed);
-
-  
-
-
+function showValue(index) {
+  console.log('This is the species:  ' +fetchedData[index].species);
 };
-
-
-
-
