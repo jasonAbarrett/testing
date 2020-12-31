@@ -24,6 +24,8 @@ btn.addEventListener("click", function() {
 
         //console.log(ourRequest.responseText);
         //    console.log(ourData[0]);
+           // console.log(ourData);
+        
     
     }; 
     
@@ -48,9 +50,12 @@ btn.addEventListener("click", function() {
 
 //console.log(data);
     
-var htmlString = "<select onchange='showValue(this.value)'><option>Select a cat breed</option>";
+var htmlString = "<select onchange='showValue(this)'><option>Select a cat breed</option>";
+
+
 
 for (i = 0; i < data.length; i++) {
+    
     htmlString += "<option>" + data[i].name + "</option>";
     //console.log(htmlString);
     document.getElementById("option-box").innerHTML = htmlString;
