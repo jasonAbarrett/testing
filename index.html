@@ -5,16 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Google Map</title>
 
-<style>
-    #map {
-  height: 400px;
-  /* The height is 400 pixels */
-  width: 100%;
-  /* The width is the width of the web page */
-}
+    <link href="./styleSheets/styles.css"
+    rel="stylesheet"
+    type="text/css"  />
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 
-
-</style>
 
 
 </head>
@@ -29,26 +25,16 @@
 </div>
 
 
-    <script>
-        function initMap() { 
-            var options = {
-                zoom:12,
-                center: {lat:43.0731,lng:-89.4012}
-            }
-
-            var map = new google.maps.Map(document.getElementById('map'), options);
-
-        }
-    </script>
 
 
+<script src="./javaScriptFiles/map.js"></script>
+    
 
+<script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOuWorrPRVT5RJCZH-NlfUb2zm-2Ga39A&callback=initMap&libraries=&v=weekly"
+defer
 
-    <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOuWorrPRVT5RJCZH-NlfUb2zm-2Ga39A&callback=initMap&libraries=&v=weekly"
-    defer
-
-  ></script>
+></script>
 
 
 </body>
