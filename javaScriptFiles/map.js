@@ -13,41 +13,42 @@
         // new map 
         var map = new google.maps.Map(document.getElementById('map'), options);
 
+        //listen for click on map
+        google.maps.event.addListener(map, 'click', 
+          //add marker
+          function(event){
+             addMarker({coords:event.latLng});
 
-        // // add marker
-        // var marker = new google.maps.Marker({
-        //     position: mid,
-        //     map: map,   
-        //     icon: 'http://maps.google.com/mapfiles/kml/pushpin/purple-pushpin.png'
-        //   });
-        
-
-        
-        //   var infowindow = new google.maps.InfoWindow({
-        //   content:  '<p>Middleton WI</p>'
-        // });
-      
-        // marker.addListener("click", function() {
-        //     infowindow.open(map, marker);
-        //   });
-
-
-        addMarker({
-          coords:{ lat: 43.0731, lng: -89.4012  },
-          iconImage: 'http://maps.google.com/mapfiles/kml/pushpin/purple-pushpin.png',
-          content:  '<p>Madison WI</p>'
         });
-        addMarker(
+
+
+
+        //create array of markers 
+        var markers = [
+          {
+            coords:{ lat: 43.0731, lng: -89.4012  },
+            iconImage: 'http://maps.google.com/mapfiles/kml/pushpin/purple-pushpin.png',
+            content:  '<p>Madison WI</p>'
+          }, 
           {coords:{ lat: 43.0972, lng: -89.5043  }, 
           iconImage: 'http://maps.google.com/mapfiles/kml/shapes/schools.png',
           content: '<p>Middleton WI</p>'
+        }, 
+        {coords:{ lat: 42.9908, lng: -89.5332  },
+        content: '<p>Verona WI</p>'
+      }
+        ];
 
-        });
-        addMarker(
-          {coords:{ lat: 42.9908, lng: -89.5332  },
-          content: '<p>Verona WI</p>'
-        });
-        
+
+
+        //loop through markers 
+        for(var i = 0; i < markers.length; i++){
+          //add marker
+          addMarker(markers[i]);
+        };
+
+
+ 
 
         // add marker function 
         function addMarker(props) {
