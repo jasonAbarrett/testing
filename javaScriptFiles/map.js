@@ -15,7 +15,7 @@
 
         //listen for click on map
         google.maps.event.addListener(map, 'click', 
-          //add marker
+          //add marker  
           function(event){
              addMarker({coords:event.latLng});
 
