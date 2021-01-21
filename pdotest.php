@@ -16,7 +16,7 @@
       $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 
 
-    # PDO QUERY 
+    # PDO QUERY   
     // $stmt = $pdo->query('SELECT * FROM posts');
     //     while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
     //         echo $row['title'] . '<br>';
@@ -34,7 +34,7 @@
       // FETCH MULTIPLE POSTS           
       
       //User Input 
-      $author = 'franklin';
+      $author = 'Brad';
       $is_published = true; 
       $id = 1;
       $limit = 3;
