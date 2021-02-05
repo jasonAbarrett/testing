@@ -23,19 +23,18 @@
         public function read() {
             //Create query
             $query = 'SELECT
-                c.name as category_name,
-                p.id, 
-                p.category_id, 
-                p.title, 
-                p.body, 
-                p.author,
-                p.created_at
+                -- c.name as category_name,
+                posts.id, 
+                posts.category_id, 
+                posts.title, 
+                posts.body, 
+                posts.author,
+                posts.created_at
             FROM 
-                ' . $this->table . ' p 
-                LEFT JOIN 
-                    categories c ON p.category_id = c.id
-                ORDER BY 
-                    p.created_at DESC'; 
+                posts'; 
+                        
+                
+
         
         //Prepare statement 
         $stmt = $this->conn->prepare($query);

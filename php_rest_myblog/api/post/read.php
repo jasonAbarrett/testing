@@ -35,7 +35,7 @@
                 'body' => html_entity_decode($body),
                 'author' => $author,
                 'category_id' => $category_id,
-                'category_name' => $category_name
+              //  'category_name' => $category_name
             );
 
             // push to "data" 
