@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Test JSON</h1>
+    
+    <ul id="people"></ul>
+    <div id="demo"></div>
+
+    <script>
+
+        // var person = {
+        //     name: "Jason",
+        //     age: 51,
+        //     address: {
+        //         street: "21 kewaunee Court", 
+        //         city: "Madison"
+        //     }, 
+        //     children: ["Oscar", "Leo"]
+        
+        
+        //     // email: function(){
+        //     //     return 'jason@gmail.com';
+        //     // }
+        // }
+
+        // //array of people objects   
+        // var people = [
+        // {
+        //     name: "jason", 
+        //     age: 51
+        // }, 
+        // {
+        //     name: "John", 
+        //     age: 40
+        // }, 
+        // {
+        //     name: "Sarah", 
+        //     age: 35
+        // }
+
+
+        // ]
+
+
+        // // person = JSON.stringify(person);
+        // // person = JSON.parse(person);
+        // //console.log(people[1].age);
+        
+        // var output = '';
+        // for(var i = 0; i < people.length; i++){
+        //     //console.log(people[i].name);
+        //     output += '<li>' + people[i].name + '</li>'; 
+
+        // }
+
+        // document.getElementById('people').innerHTML = output;
+
+        
+
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+           // console.log(xhttp.responseText);
+           var response = JSON.parse(xhttp.responseText);
+            //console.log(response.people);
+            var people = response.people;
+
+        // Typical action to be performed when the document is ready:
+            
+            
+            var output = '';
+            for(var i = 0; i < people.length; i++){
+                //console.log(people[i].name);
+                output += '<li>' + people[i].name + ' and is ' + people[i].age + '</li>'; 
+
+            }
+            document.getElementById("people").innerHTML = output;
+           
+        }
+            };
+        xhttp.open("GET", "people.json", true);
+       
+       
+        xhttp.send();
+
+
+
+    </script>
+
+
+
+</body>
+</html>
