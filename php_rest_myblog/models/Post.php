@@ -23,7 +23,7 @@
         public function read() {
             //Create query
             $query = 'SELECT
-                -- c.name as category_name,
+                categories.name as category_name,
                 posts.id, 
                 posts.category_id, 
                 posts.title, 
@@ -31,7 +31,13 @@
                 posts.author,
                 posts.created_at
             FROM 
-                posts'; 
+                ' . $this->table . '
+                join categories on posts.category_id = categories.id
+            ORDER BY 
+                posts.created_at, 
+                category_name ASC
+                
+                '; 
                         
                 
 
