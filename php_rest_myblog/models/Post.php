@@ -39,9 +39,7 @@
                 
                 '; 
                         
-                
-
-        
+                       
         //Prepare statement 
         $stmt = $this->conn->prepare($query);
 
