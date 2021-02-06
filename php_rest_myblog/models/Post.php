@@ -50,4 +50,56 @@
         
         }
 
+         // Get Single Post
+        
+         public function read_single() {
+        
+        // Create query
+            $query = 'SELECT
+                    categories.name as category_name,
+                    posts.id, 
+                    posts.category_id, 
+                    posts.title, 
+                    posts.body, 
+                    posts.author,
+                    posts.created_at
+                FROM 
+                    ' . $this->table . '
+                    join categories on posts.category_id = categories.id
+                                    
+                WHERE 
+                    posts.id = ?
+                LIMIT 0, 1
+                '; 
+        
+            // Prepare statement
+            $stmt = $this->conn->prepare($query);
+
+            // Bind ID
+            $stmt->bindParam(1, $this->id);
+
+            // Execute query
+            $stmt->execute();
+
+            $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+            // Set properties
+            $this->title = $row['title'];
+            $this->body = $row['body'];
+            $this->author = $row['author'];
+            $this->category_id = $row['category_id'];
+            $this->category_name = $row['category_name'];
+            $this->created_at = $row['created_at'];
+            
+         }
+
+
+
+
+
+
+        
+
+
+         
     }
