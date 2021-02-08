@@ -9,7 +9,8 @@ $(document).ready(function(){
         e.preventDefault();
 
         //serialize form data
-        var url = $('form').serialize();
+        var url = $("form").serialize().replace(/\+/g,' ');
+
 
         //function to turn url to an object
         function getUrlVars(url) {
@@ -25,6 +26,7 @@ $(document).ready(function(){
 
         //pass serialized data to function
         var test = getUrlVars(url);
+        
 
         //post with ajax
         $.ajax({
