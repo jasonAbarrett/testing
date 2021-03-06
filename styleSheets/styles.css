@@ -107,9 +107,13 @@ article {
     width: 50%;
     margin: 0 auto;
     color: #0a122a;
+}   
+
+#readDisplay {
+    width: 75%;
+    margin: 0 auto;
+    color: #0a122a;
 }
-
-
 
 
 .center {
