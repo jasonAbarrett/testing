@@ -14,6 +14,8 @@
     //instantiate blog post object 
     $post = new Post($db);
 
+
+        
     //to get id value, like domain.com?id=3, $_GET['id'] gets the 3 
     // turnary operators, if isset to id, ? (then) .., : (else)
     // Get ID

@@ -189,7 +189,7 @@ footer address p {
 }
 
 
-
+/* 
 table {
     border-collapse: collapse;
   }
@@ -216,7 +216,7 @@ th {
     color: #0a122a;
 }
 
-tr:nth-child(even) {background-color: #f2f2f2;}
+tr:nth-child(even) {background-color: #f2f2f2;} */
 
 
 

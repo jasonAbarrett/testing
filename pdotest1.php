@@ -1,3 +1,7 @@
+
+
+
+
 <?php
 
     $host = 'localhost'; 
@@ -31,15 +35,20 @@
       // FETCH MULTIPLE POSTS           
       
       //User Input 
-      $author = 'franklin';
+      $author = '';
       $is_published = true; 
-      $id = 1;
-      $limit = 3;
+      $id = '';
+      $limit = '';
 
       // Positional parameters 
-      $sql = 'SELECT * FROM posts WHERE author = ? && is_published = ? LIMIT ?';
+     // $sql = 'SELECT * FROM posts WHERE author = ? && is_published = ? LIMIT ?';
+      $sql = 'SELECT * FROM posts WHERE is_published = ?';
+     
       $stmt = $pdo->prepare($sql);
-      $stmt->execute([$author, $is_published, $limit]); 
+     // $stmt->execute([$author, $is_published, $limit]); 
+      $stmt->execute([$is_published]); 
+     
+     
       $posts = $stmt->fetchAll(); 
 
           
@@ -52,7 +61,7 @@
 
       //var_dump($posts); 
       foreach($posts as $post){
-          echo $post->title . $post->author .  '<br>';
+          echo $post->title . ' ' . $post->body . ' ' . $post->author .  '<br>';
         }
 
 
