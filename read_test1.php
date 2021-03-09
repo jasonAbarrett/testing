@@ -13,7 +13,7 @@
           <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css">
   
        
-<style>
+<!-- <style>
 td.details-control {
     background: url('https://datatables.net/examples/resources/details_open.png') no-repeat center center;
     cursor: pointer;
@@ -21,7 +21,7 @@ td.details-control {
 tr.shown td.details-control {
     background: url('https://datatables.net/examples/resources/details_close.png') no-repeat center center;
 }
-</style>
+</style> -->
 
 
 
@@ -32,9 +32,12 @@ tr.shown td.details-control {
 <body>
 <a class="skipLink" href="#mainContent">Skip to Main Content</a>
 
-<script src="jquery.js"></script>
-<script src="jquery.dataTables.min.js"></script>
+<!-- <script src="jquery.js"></script>
+<script src="jquery.dataTables.min.js"></script> -->
+
+<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>
+
 
 
     <header>
@@ -49,9 +52,10 @@ tr.shown td.details-control {
 
 
 
-<table id="example" class="display" style="width:100%">
+<table id="jasonTable" class="display" style="width:100%">
         <thead>
             <tr>
+            <th></th>
                 <th>TItle</th>
                 <th>Author</th>
                 <th>Category Id</th>
@@ -59,6 +63,7 @@ tr.shown td.details-control {
         </thead>
         <tfoot>
             <tr>
+            <th></th>
                 <th>TItle</th>
                 <th>Author</th>
                 <th>Category Id</th>
@@ -66,8 +71,8 @@ tr.shown td.details-control {
         </tfoot>
   </table>
             
-              
-     <script type='text/javascript'>
+          
+<script type='text/javascript'>
 
              /* Formatting function for row details - modify as you need */
 function format ( d ) {
@@ -87,7 +92,7 @@ function format ( d ) {
 $(document).ready(function() {
    
    
-    var table = $('#example').DataTable( {
+    var table = $('#jasonTable').DataTable( {
         "ajax": "http://localhost/testing/php_rest_myblog/api/post/read.php",
        
 
@@ -96,12 +101,12 @@ $(document).ready(function() {
        // http://localhost/testing/php_rest_myblog/api/post/read.php
        
         "columns": [
-            // {
-            //     "className":      'details-control',
-            //     // "orderable":      false,
-            //     // "data":           null,
-            //     // "defaultContent": '',
-            // },
+            {
+                "className":      'details-control',
+                "orderable":      false,
+                "data":           null,
+                "defaultContent": '',
+            },
             { "data": "title" },
             { "data": "author" },
             { "data": "category_id" }   
@@ -110,7 +115,7 @@ $(document).ready(function() {
     } );
      
     // Add event listener for opening and closing details
-    $('#example tbody').on('click', 'td.details-control', function () {
+    $('#jasonTable tbody').on('click', 'td.details-control', function () {
         var tr = $(this).closest('tr');
         var row = table.row( tr );
  
@@ -127,7 +132,7 @@ $(document).ready(function() {
     } );
 } );
 
-                </script>
+</script>
 
 
 

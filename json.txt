@@ -1,0 +1,92 @@
+{
+  "data": [
+    {
+      "number": "1",
+      "title": "Project Case Files_",
+      "desc": "Case files prepared for consulting projects organized through the center. Files include signed contracts between the consultants, the University and the local business or agency receiving services; departmental copies of billing and payment statements for revenue and expenses. Notes from meetings between the contracted parties, prepared findings, recommendations, printouts of computer code and other documents important to the project.",
+      "descsmall": "Case files prepared for consul",
+      "campus_name": "Northern State University",
+      "functional_area": "Libraries, Archives and Museums"
+    },
+    {
+      "number": "100",
+      "title": "Health Records for students, faculty in Nursing Programs",
+      "desc": "College of Nursing clinical placements for traditional undergraduate student and faculty, graduate programs and accelerated nursing programs all require extensive health records from each applicant. Applicant health records include but are not limited to: -MMR's -Hepatitis B series or titers -Varicella vaccines or titers -Rubeola -Rubella and Mumps titers -TB tests and/or related materials -CPR certification -Criminal Background checks -Background information disclosure forms -Student responsibility forms -Consent forms -Liability forms related to clinical placement.",
+      "descsmall": "College of Nursing clinical pl",
+      "campus_name": "Northern State University",
+      "functional_area": "Administration"
+    },
+    {
+      "number": "84",
+      "title": "Student Research Event Records",
+      "desc": "Series includes records of programs that highlight student research. These include but are not limited to Celebration of Scholarship and UW System Symposium. Both are administrated by the Office of Grants and Faculty Development. Records include correspondence, applications, abstracts, winners list, judge assignments, evaluation forms, completed judging forms and promotion and advertizing. These records are only for the Celebration of Scholarship.",
+      "descsmall": "Series includes records of pro",
+      "campus_name": "Northern State University",
+      "functional_area": "Libraries, Archives and Museums"
+    },
+    {
+      "number": "SUADM003",
+      "title": "ALPHABETICAL/TOPICAL FILES",
+      "desc": "This record series consists of files which document the activities of academic and operational departments on campus, including the internal development and operations of programs. Records can include correspondence, reports, memoranda and notes, publications, and announcements. These files may also be known as subject files, departmental or office files, mixed files, or program files. The files may include records of non-historical value scheduled by other RRDAs, which may be removed by each institution's archives upon receipt.",
+      "descsmall": "This record series consists of",
+      "campus_name": "Northern State University",
+      "functional_area": "Administration"
+    },
+    {
+      "number": "SUADM006",
+      "title": "REORGANIZATION DOCUMENTATION",
+      "desc": "This record series consists of documents showing organizational changes within the college or university, including files of significant addition, deletion, or transfer of administrative, functional or regulatory responsibilities, etc.",
+      "descsmall": "This record series consists of",
+      "campus_name": "Northern State University",
+      "functional_area": "Administration"
+    },
+    {
+      "number": "SUATH002",
+      "title": "RECRUITMENT RECORDS",
+      "desc": "This record series consists of submitted forms requesting permission to offer a specific Special Topics (290/490) class for a semester. It contains a description of the class offered, reasons for offering, prerequisites and other characteristics. Department Chair and Dean approval are required. A syllabus must be attached. Once the class is offered, the information in this record can be found in the class schedule. Instuctor, Department and Dean copies are duplicates and therefore nonrecords that may be destroyed before the retetion period of the record expires.",
+      "descsmall": "This record series consists of",
+      "campus_name": "Northern State University",
+      "functional_area": "Athletics"
+    },
+    {
+      "number": "SUATH197",
+      "title": "ELIGIBILITY CERTIFICATE",
+      "desc": "This record series consists of submitted forms requesting permission to offer a specific Special Topics (290/490) class for a semester. It contains a description of the class offered, reasons for offering, prerequisites and other characteristics. Department Chair and Dean approval are required. A syllabus must be attached. Once the class is offered, the information in this record can be found in the class schedule. Instuctor, Department and Dean copies are duplicates and therefore nonrecords that may be destroyed before the retetion period of the record expires.",
+      "descsmall": "This record series consists of",
+      "campus_name": "Northern State University",
+      "functional_area": "Athletics"
+    },
+    {
+      "number": "SUFIS600",
+      "title": "JOURNAL ENTRIES",
+      "desc": "This record series consists of submitted forms requesting permission to offer a specific Special Topics (290/490) class for a semester. It contains a description of the class offered, reasons for offering, prerequisites and other characteristics. Department Chair and Dean approval are required. A syllabus must be attached. Once the class is offered, the information in this record can be found in the class schedule. Instuctor, Department and Dean copies are duplicates and therefore nonrecords that may be destroyed before the retetion period of the record expires.",
+      "descsmall": "This record series consists of",
+      "campus_name": "Northern State University",
+      "functional_area": "Fiscal and Accounting"
+    },
+    {
+      "number": "SUFIS700",
+      "title": "CAPITAL ACCOUNTING PROJECTS: FEDERAL CONSTRUCTION FUNDS",
+      "desc": "This record series consists of documents showing organizational changes within the college or university, including files of significant addition, deletion, or transfer of administrative, functional or regulatory responsibilities, etc.",
+      "descsmall": "This record series consists of",
+      "campus_name": "Northern State University",
+      "functional_area": "Fiscal and Accounting"
+    },
+    {
+      "number": "SUSH107",
+      "title": "Student Health Center Employee/Visitor Encounter record",
+      "desc": "This record series consists of documents showing organizational changes within the college or university, including files of significant addition, deletion, or transfer of administrative, functional or regulatory responsibilities, etc.",
+      "descsmall": "This record series consists of",
+      "campus_name": "Northern State University",
+      "functional_area": "Health Services"
+    },
+    {
+      "number": "SUSH121",
+      "title": "Counseling Center Student Counseling Patient Files",
+      "desc": "This record series consists of documents showing organizational changes within the college or university, including files of significant addition, deletion, or transfer of administrative, functional or regulatory responsibilities, etc.",
+      "descsmall": "This record series consists of",
+      "campus_name": "Northern State University",
+      "functional_area": "Health Services"
+    }
+  ]
+}
