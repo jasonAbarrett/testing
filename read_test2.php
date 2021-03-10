@@ -167,8 +167,7 @@
                 $results = array();
                 while($row = $result1->fetch_assoc()) {
                 $results[] = $row; 
-
-            }
+                }
 
             $dataobject = new jdata($results);
         }
